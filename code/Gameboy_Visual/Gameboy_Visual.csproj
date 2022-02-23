@@ -8,7 +8,7 @@
     <ProjectGuid>{0E35A2B5-5A6D-47BA-8A5E-E2758BC13857}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Gameboy_Visual</RootNamespace>
+    <RootNamespace>NS_Gameboy_Visual</RootNamespace>
     <AssemblyName>Gameboy_Visual</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Barr.cs" />
     <Compile Include="Color.cs" />
+    <Compile Include="Gameboy_Visual.cs" />
     <Compile Include="nQuant\Box.cs" />
     <Compile Include="nQuant\ColorData.cs" />
     <Compile Include="nQuant\CubeCut.cs" />
@@ -53,11 +54,12 @@
     <Compile Include="nQuant\QuantizedPalette.cs" />
     <Compile Include="nQuant\WuQuantizer.cs" />
     <Compile Include="nQuant\WuQuantizerBase.cs" />
-    <Compile Include="Utility.My_Byte2.cs" />
+    <Compile Include="Test.cs" />
+    <Compile Include="Utility\Utility.My_Byte2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utility.My_Bitmap.cs" />
-    <Compile Include="Utility.My_Byte.cs" />
+    <Compile Include="Utility\Utility.My_Bitmap.cs" />
+    <Compile Include="Utility\Utility.My_Byte.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

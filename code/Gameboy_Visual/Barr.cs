@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Gameboy_Visual
+namespace NS_Gameboy_Visual
 {
     public static class Barr
     {

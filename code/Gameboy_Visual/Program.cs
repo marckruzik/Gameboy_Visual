@@ -22,7 +22,7 @@ namespace NS_Gameboy_Visual
         {
             if (args.Length == 0)
             {
-                Console.WriteLine ("please specify a path : \n" + "exe path [number of colors] [(R,G,B) (R,G,B)...]");
+                Console.WriteLine ("please specify a path : \n" + "exe path [(R,G,B) (R,G,B)...]");
                 Console.ReadKey ();
                 return;
             }

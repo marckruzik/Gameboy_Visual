@@ -5,6 +5,10 @@
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <Platforms>AnyCPU;x86</Platforms>
+    <ApplicationIcon>gameboy_visual.ico</ApplicationIcon>
+    <Win32Resource />
+    <Version>1.1.0</Version>
+    <Authors>Marc Kruzik</Authors>
   </PropertyGroup>
 
   <ItemGroup>

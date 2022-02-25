@@ -29,6 +29,7 @@ namespace Gameboy_Visual_Gui
         /// </summary>
         private void InitializeComponent ()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -36,12 +37,14 @@ namespace Gameboy_Visual_Gui
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.buttonOpen = new System.Windows.Forms.Button();
-            this.buttonSave = new System.Windows.Forms.Button();
-            this.checkBoxNoise = new System.Windows.Forms.CheckBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.pictureBoxBefore = new System.Windows.Forms.PictureBox();
             this.pictureBoxAfter = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.buttonSave = new System.Windows.Forms.Button();
+            this.checkBoxNoise = new System.Windows.Forms.CheckBox();
+            this.buttonOpen = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -49,6 +52,8 @@ namespace Gameboy_Visual_Gui
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBefore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAfter)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -109,40 +114,6 @@ namespace Gameboy_Visual_Gui
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // buttonOpen
-            // 
-            this.buttonOpen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonOpen.Location = new System.Drawing.Point(194, 447);
-            this.buttonOpen.Name = "buttonOpen";
-            this.buttonOpen.Size = new System.Drawing.Size(94, 29);
-            this.buttonOpen.TabIndex = 3;
-            this.buttonOpen.Text = "Open";
-            this.buttonOpen.UseVisualStyleBackColor = true;
-            this.buttonOpen.Click += new System.EventHandler(this.buttonOpen_Click);
-            // 
-            // buttonSave
-            // 
-            this.buttonSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSave.Location = new System.Drawing.Point(660, 447);
-            this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(94, 29);
-            this.buttonSave.TabIndex = 4;
-            this.buttonSave.Text = "Save";
-            this.buttonSave.UseVisualStyleBackColor = true;
-            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
-            // 
-            // checkBoxNoise
-            // 
-            this.checkBoxNoise.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBoxNoise.AutoSize = true;
-            this.checkBoxNoise.Location = new System.Drawing.Point(507, 450);
-            this.checkBoxNoise.Name = "checkBoxNoise";
-            this.checkBoxNoise.Size = new System.Drawing.Size(98, 24);
-            this.checkBoxNoise.TabIndex = 5;
-            this.checkBoxNoise.Text = "with noise";
-            this.checkBoxNoise.UseVisualStyleBackColor = true;
-            this.checkBoxNoise.CheckedChanged += new System.EventHandler(this.checkBoxNoise_CheckedChanged);
-            // 
             // splitContainer1
             // 
             this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -192,16 +163,81 @@ namespace Gameboy_Visual_Gui
             this.pictureBoxAfter.TabIndex = 3;
             this.pictureBoxAfter.TabStop = false;
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.11211F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.88789F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.buttonOpen, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(24, 429);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(892, 64);
+            this.tableLayoutPanel1.TabIndex = 3;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.69355F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.30645F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 182F));
+            this.tableLayoutPanel2.Controls.Add(this.buttonSave, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.checkBoxNoise, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(450, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(439, 58);
+            this.tableLayoutPanel2.TabIndex = 10;
+            // 
+            // buttonSave
+            // 
+            this.buttonSave.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonSave.Location = new System.Drawing.Point(161, 14);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(92, 29);
+            this.buttonSave.TabIndex = 11;
+            this.buttonSave.Text = "Save";
+            this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+            // 
+            // checkBoxNoise
+            // 
+            this.checkBoxNoise.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkBoxNoise.AutoSize = true;
+            this.checkBoxNoise.Location = new System.Drawing.Point(30, 17);
+            this.checkBoxNoise.Name = "checkBoxNoise";
+            this.checkBoxNoise.Size = new System.Drawing.Size(98, 24);
+            this.checkBoxNoise.TabIndex = 10;
+            this.checkBoxNoise.Text = "with noise";
+            this.checkBoxNoise.UseVisualStyleBackColor = true;
+            this.checkBoxNoise.CheckedChanged += new System.EventHandler(this.checkBoxNoise_CheckedChanged);
+            // 
+            // buttonOpen
+            // 
+            this.buttonOpen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonOpen.Location = new System.Drawing.Point(176, 17);
+            this.buttonOpen.Name = "buttonOpen";
+            this.buttonOpen.Size = new System.Drawing.Size(94, 29);
+            this.buttonOpen.TabIndex = 10;
+            this.buttonOpen.Text = "Open";
+            this.buttonOpen.UseVisualStyleBackColor = true;
+            this.buttonOpen.Click += new System.EventHandler(this.buttonOpen_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(957, 505);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.splitContainer1);
-            this.Controls.Add(this.checkBoxNoise);
-            this.Controls.Add(this.buttonSave);
-            this.Controls.Add(this.buttonOpen);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "Gameboy_Visual";
@@ -213,6 +249,9 @@ namespace Gameboy_Visual_Gui
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBefore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAfter)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,13 +265,15 @@ namespace Gameboy_Visual_Gui
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.Button buttonOpen;
-        private System.Windows.Forms.Button buttonSave;
-        private System.Windows.Forms.CheckBox checkBoxNoise;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.PictureBox pictureBoxBefore;
         private System.Windows.Forms.PictureBox pictureBoxAfter;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Button buttonOpen;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.CheckBox checkBoxNoise;
     }
 }
 

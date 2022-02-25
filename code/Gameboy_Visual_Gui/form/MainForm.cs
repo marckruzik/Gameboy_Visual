@@ -65,8 +65,8 @@ namespace Gameboy_Visual_Gui
 
         private void open_picture ()
         {
-            Bitmap bmp_before = new Bitmap (this.filepath);
-            this.pictureBoxBefore.Image = bmp_before;
+            //Bitmap bmp_before = new Bitmap (this.filepath);
+            this.pictureBoxBefore.Image = Image.FromFile(this.filepath);
 
             bool noise = this.checkBoxNoise.Checked;
             Bitmap bmp_after = Gameboy_Visual.from_path_get_gbbmp (this.filepath, noise);

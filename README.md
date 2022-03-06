@@ -9,7 +9,7 @@ A small program to convert a photo into a gameboy like picture, with only 4 gree
 
 ## Download
 
-Click here to direct download a complete version of the software (extract the archive, and double click on Gameboy_Visual.exe):
+Click here to direct download a complete version of the software (extract the archive, and double click on Gameboy_Visual_Gui.exe):
 
 ![Gameboy_Visual-v1.0-portable.zip](https://github.com/marckruzik/Gameboy_Visual/releases/download/v1.0-portable/Gameboy_Visual-v1.0-portable.zip)
 

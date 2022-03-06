@@ -1,18 +1,23 @@
 
 # Gameboy_Visual
- 
-A small program to convert a photo into a gameboy like picture.
 
-*pic software*
+A small program to convert a photo into a gameboy like picture, with only 4 greenish colors.
 
-*pic dark souls 1*
-*pic dark souls 2*
+!(pic/Gameboy_Visual-Dark_Souls.png)
 
-A 160x144 game boy dimensions portrait picture (zoomed and original size):
-*pic marc kruzik normal and game boy 160x144 (zoomed)*
+!(pic/Gameboy_Visual-Beach.png)
 
-*pic marc kruzik game boy 160x144 (original)*
+Video explaining what you can do with the software (in french):
 
+[!(pic/Gameboy_Visual-youtube_miniature-button.jpg)](https://www.youtube.com/watch?v=sLC-q0epYi0)
+
+https://www.youtube.com/watch?v=sLC-q0epYi0
+
+Some 160x144px pictures (the same dimensions as the Game Boy screen):
+
+!(pic/Gameboy_Visual-Macho_Man-160x144.png)
+
+!(pic/Gameboy_Visual-about.png)
 
 ## Credits
 
